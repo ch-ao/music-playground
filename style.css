@@ -103,3 +103,8 @@ img:hover {
   border: 10px solid yellowgreen;
   cursor: pointer;
 }
+
+.co {
+  background-color: teal;
+  height: 100vh;
+}
