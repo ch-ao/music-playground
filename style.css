@@ -33,6 +33,7 @@ footer {
   margin-top: 100px;
 }
 
+/* drum  */
 .w {
   background-image: url("./images/tom1.png");
 }
@@ -59,6 +60,55 @@ footer {
 
 .l {
   background-image: url("./images/snare.png");
+}
+
+/* sax  */
+.e {
+  background-image: url(./images/sax-1.png);
+  background-size: 100%;
+}
+
+.r {
+  background-image: url(./images/sax-2.png);
+  background-size: 100%;
+}
+
+.t {
+  background-image: url(./images/sax-3.png);
+  background-size: 100%;
+}
+
+/* lazer  */
+.y {
+  background-image: url(./images/lazer-1.png);
+  background-size: 100%;
+}
+
+.u {
+  background-image: url(./images/lazer-2.png);
+  background-size: 100%;
+}
+
+.i {
+  background-image: url(./images/lazer-3.jpeg);
+  background-size: 100%;
+}
+
+
+/* dj  */
+.f {
+  background-image: url(./images/dj-1.png);
+  background-size: 100%;
+}
+
+.g {
+  background-image: url(./images/dj-2.jpg);
+  background-size: 100%;
+}
+
+.h {
+  background-image: url(./images/dj-3.png);
+  background-size: 100%;
 }
 
 .pressed {

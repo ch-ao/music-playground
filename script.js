@@ -1,4 +1,4 @@
-const keyClass = document.querySelectorAll('.drum');
+const keyClass = document.querySelectorAll('.bb');
 keyClass.forEach(e => e.addEventListener('click', function() {
   switch (e.innerHTML) {
     case 'w':
@@ -29,6 +29,45 @@ keyClass.forEach(e => e.addEventListener('click', function() {
         let snare = new Audio("./sounds/snare.mp3");
         snare.play();
         break;
+
+    case 'e':
+        let e = new Audio("./new-sounds/Sax1.mp3");
+        e.play();
+        break;
+    case 'r':
+        let r = new Audio("./new-sounds/Sax2.mp3");
+        r.play();
+        break;
+    case 't':
+        let t = new Audio("./new-sounds/Sax3.mp3");
+        t.play();
+        break;     
+
+    case 'y':
+        let y = new Audio("./new-sounds/DJ-Lazer-1.mp3");
+        y.play();
+        break;
+    case 'u':
+        let u = new Audio("./new-sounds/DJ-Lazer-2.mp3");
+        u.play();
+        break;
+    case 'i':
+        let i = new Audio("./new-sounds/DJ-Lazer-3.mp3");
+        i.play();
+        break;   
+
+    case 'f':
+        let f = new Audio("./new-sounds/DJ-Scratch-1.mp3");
+        f.play();
+        break;
+    case 'g':
+        let g = new Audio("./new-sounds/DJ-Scratch-2.mp3");
+        g.play();
+        break;
+    case 'h':
+        let h = new Audio("./new-sounds/DJ-Scratch-3.mp3");
+        h.play();
+        break;     
   }
   buttonAnimation(e.innerHTML);
 }));
@@ -73,8 +112,34 @@ document.addEventListener('keypress', function(e) {
         r.play();
         break;
     case 't':
-        let t = new Audio("./new-sounds/trump1.mp3");
+        let t = new Audio("./new-sounds/Sax3.mp3");
         t.play();
+        break;     
+
+    case 'y':
+        let y = new Audio("./new-sounds/DJ-Lazer-1.mp3");
+        y.play();
+        break;
+    case 'u':
+        let u = new Audio("./new-sounds/DJ-Lazer-2.mp3");
+        u.play();
+        break;
+    case 'i':
+        let i = new Audio("./new-sounds/DJ-Lazer-3.mp3");
+        i.play();
+        break;   
+
+    case 'f':
+        let f = new Audio("./new-sounds/DJ-Scratch-1.mp3");
+        f.play();
+        break;
+    case 'g':
+        let g = new Audio("./new-sounds/DJ-Scratch-2.mp3");
+        g.play();
+        break;
+    case 'h':
+        let h = new Audio("./new-sounds/DJ-Scratch-3.mp3");
+        h.play();
         break;     
   }
   buttonAnimation(e.key);
