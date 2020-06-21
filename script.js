@@ -1,4 +1,7 @@
+var is_play = false;
+var play = new Audio('./yijianmei-trap.mp3');
 const keyClass = document.querySelectorAll('.bb');
+
 keyClass.forEach(e => e.addEventListener('click', function() {
   switch (e.innerHTML) {
     case 'w':
@@ -153,9 +156,21 @@ function buttonAnimation(currentKey) {
   } , 100)
 }
 
-$('#play').click('play', ()=> {
-    let play = new Audio('./tokyo.mp3');
+// $('.container').addClass('animate__animated animate__pulse');
+
+$('#play').click(()=> {
     play.play();
-    $('#play').addClass('animate__animated animate__heartBeat animate__infinite')
+    $('.cover').removeClass('animate__rollIn')
+    $('.cover').addClass('animate__animated animate__pulse animate__infinite')
 })
 
+$('#pause').click(()=> {
+    play.pause();
+    $('.cover').removeClass('animate__animated animate__pulse animate__infinite')
+})
+
+$('#replay').click(()=> {
+    play.load();
+    play.play();
+    $('.cover').addClass('animate__animated animate__pulse animate__infinite')
+})
